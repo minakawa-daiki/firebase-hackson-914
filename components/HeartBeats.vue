@@ -7,6 +7,12 @@
 
 <script>
 export default {
+  props: {
+    val: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       datacollection: null
@@ -32,9 +38,6 @@ export default {
           }
         ]
       }
-    },
-    getRandomInt() {
-      return Math.floor(Math.random() * (50 - 5 + 1)) + 5
     }
   }
 }

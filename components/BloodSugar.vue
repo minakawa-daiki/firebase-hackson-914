@@ -7,6 +7,12 @@
 
 <script>
 export default {
+  props: {
+    val: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       datacollection: null
