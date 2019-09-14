@@ -9,8 +9,8 @@
 export default {
   props: {
     val: {
-      type: Number,
-      default: 0
+      type: Array,
+      default: () => []
     }
   },
   data() {

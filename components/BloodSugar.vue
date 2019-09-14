@@ -9,8 +9,8 @@
 export default {
   props: {
     val: {
-      type: Number,
-      default: 0
+      type: Array,
+      default: () => []
     }
   },
   data() {
@@ -24,17 +24,17 @@ export default {
   methods: {
     fillData() {
       this.datacollection = {
-        labels: [this.getRandomInt(), this.getRandomInt()],
+        labels: this.val,
         datasets: [
           {
             label: 'Data One',
             backgroundColor: '#f87979',
-            data: [this.getRandomInt(), this.getRandomInt()]
+            data: this.val
           },
           {
             label: 'Data One',
             backgroundColor: '#f87979',
-            data: [this.getRandomInt(), this.getRandomInt()]
+            data: this.val
           }
         ]
       }
