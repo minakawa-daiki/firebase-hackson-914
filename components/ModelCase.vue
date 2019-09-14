@@ -39,7 +39,6 @@
           </v-col>
         </v-row>
       </v-timeline-item>
-
       <v-timeline-item color="pink" small>
         <v-row class="pt-1">
           <v-col cols="3">
