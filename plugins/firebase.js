@@ -26,6 +26,7 @@ try {
 export default ({ store }, inject) => {
   inject('firebase', firebase)
   inject('db', firebase.firestore())
+  inject('auth', firebase.auth())
 }
 const auth = firebase.auth()
 const db = firebase.firestore()
